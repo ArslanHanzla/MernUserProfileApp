@@ -1,0 +1,7 @@
+In this Application i create multiple routes in node.js  which includes signup for registration, login after signup, reset password 
+Registration is done by taking firstname,lastname, email, password and confirm password. when user enter all the details all the details he will be regiestered.
+For Login user needs to enter email and password. after login user reach at dashboard page.
+if user want to change the password he needs to enter email, old password and then new password system verify the previous password in mongodb if match then it updates the new password.
+I also create a route for Forget password, if user forget his password he simply enter his email then system sends a token in email to the user i use nodemailer service to send the email. when user open his email he find a token he need to copy that token and their is a button on a page "forget pass enter" when user clicks on this button he found two search fields in 1st field he copy that token and in second field he write his new password system verifies the token and change the password and leads the user to login page. the expiration time for token is 1 hour.
+I also create a route for update profile, if user want to update his profile after login he enter his email, date of birth,education,image this form is shown to the user on dashboard page so when user submits his data he will land on that page.
+I was unable to create a route of signup/login by using google authantication. 
